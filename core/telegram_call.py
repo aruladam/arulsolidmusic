@@ -39,6 +39,7 @@ class TelegramPlayer(Call):
             return await mess.edit(
                 f"""
 {gm(chat_id, 'now_streaming')}
+🔘 {gm(chat_id, 'group')}: @EmporioFamilyWibu
 📌 {gm(chat_id, 'yt_title')}: [{title}]({link}) 
 ⏱️ {gm(chat_id, 'duration')}: {duration}
 ✨ {gm(chat_id, 'req_by')}: {mention}
@@ -87,6 +88,7 @@ class TelegramPlayer(Call):
             return await mess.edit(
                 f"""
 {gm(chat_id, 'sekarang_streaming')}
+🔘 {gm(chat_id, 'group')}: @EmporioFamilyWibu
 📌 {gm(chat_id, 'yt_title')}: [{title}]({link}) 
 ⏱️ {gm(chat_id, 'duration')}: {duration}
 ✨ {gm(chat_id, 'req_by')}: {mention}
