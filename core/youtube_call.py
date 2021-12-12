@@ -45,6 +45,7 @@ class YoutubePlayer(Call):
             return await mess.edit(
                 f"""
 {gm(chat_id, 'now_streaming')}
+🔘 {gm(chat_id, 'group')}: @EmporioFamilyWibu
 📌 {gm(chat_id, 'yt_title')}: [{title}](https://t.me/{bot_username}?start=ytinfo_{yt_id})
 ⏱️ {gm(chat_id, 'duration')}: {duration}
 ✨ {gm(chat_id, 'req_by')}: {mention}
@@ -103,6 +104,7 @@ class YoutubePlayer(Call):
             return await mess.edit(
                 f"""
 {gm(chat_id, 'now_streaming')}
+🔘 {gm(chat_id, 'group')}: @EmporioFamilyWibu
 📌 {gm(chat_id, 'yt_title')}: [{title}](https://t.me/{bot_username}?start=ytinfo_{yt_id})
 ⏱️ {gm(chat_id, 'duration')}: {duration}
 ✨ {gm(chat_id, 'req_by')}: {mention}
