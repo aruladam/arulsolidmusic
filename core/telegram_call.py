@@ -45,7 +45,7 @@ class TelegramPlayer(Call):
 ✨ {gm(chat_id, 'req_by')}: {mention}
 🎥 {gm(chat_id, 'stream_type_title')}: {gm(chat_id, 'stream_type_local_audio')}""",
 🥊 {gm(chat_id, 'support')}: @EmporioFamilyWibu   
-      disable_web_page_preview=True,
+              disable_web_page_preview=True,
             )
         except NoActiveGroupCall:
             await self.start_call(chat_id)
