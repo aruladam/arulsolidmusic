@@ -44,8 +44,8 @@ class TelegramPlayer(Call):
 ⏱️ {gm(chat_id, 'duration')}: {duration}
 ✨ {gm(chat_id, 'req_by')}: {mention}
 🎥 {gm(chat_id, 'stream_type_title')}: {gm(chat_id, 'stream_type_local_audio')}""",
-🥊 {gm(chat_id, 'support')}: @EmporioFamilyWibu   
-              disable_web_page_preview=True,
+                 
+                  disable_web_page_preview=True,
             )
         except NoActiveGroupCall:
             await self.start_call(chat_id)
@@ -89,12 +89,11 @@ class TelegramPlayer(Call):
             return await mess.edit(
                 f"""
 {gm(chat_id, 'sekarang_streaming')}
-🔘 {gm(chat_id, 'group')}: @EmporioFamilyWibu
 📌 {gm(chat_id, 'yt_title')}: [{title}]({link}) 
 ⏱️ {gm(chat_id, 'duration')}: {duration}
 ✨ {gm(chat_id, 'req_by')}: {mention}
 🎥 {gm(chat_id, 'stream_type_title')}: {gm(chat_id, 'stream_type_local_video')}""",
-🥊 {gm(chat_id, 'support')}: @EmporioFamilyWibu
+
               disable_web_page_preview=True,
             )
         except NoActiveGroupCall:
